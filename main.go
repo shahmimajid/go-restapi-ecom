@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"os"
 	"github.com/gorilla/handlers"
-	"github.com/shahmimajid/store"
+	"github.com/shahmimajid/go-restapi-ecom/store"
 )
 
 func main() {
