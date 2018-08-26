@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+
 	"github.com/gorilla/handlers"
 	"github.com/shahmimajid/go-restapi-ecom/store"
 )
@@ -14,7 +15,8 @@ func main() {
 	port := os.Getenv("PORT")
 
 	if port == "" {
-		log.Fatal("$PORT must be set")
+		port = "8080"
+		//log.Fatal("$PORT must be set")
 	}
 
 	router := store.NewRouter() // create routes
